@@ -1,0 +1,33 @@
+.posts-grid {
+}
+
+.posts-grid__grid {
+  max-width: 2000px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(1, minmax(150px, 1fr));
+}
+
+.posts-grid__search-bar {
+  margin: 0 auto 60px auto;
+}
+.posts-grid__search-bar input {
+  display: block;
+  margin: 0 auto;
+  border: purple 3px solid;
+  border-radius: 6px;
+  padding: 3px 20px;
+}
+
+@media (min-width: 640px) {
+  .posts-grid__grid {
+    margin-left: auto;
+    margin-right: auto;
+    grid-gap: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .posts-grid__search-bar input {
+    padding: 3px 40px;
+  }
+}
